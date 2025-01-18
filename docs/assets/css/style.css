@@ -4,48 +4,93 @@
 /* 공통 스타일 */
 body {
   font-family: 'Noto Sans', sans-serif;
-  background-color: #FAFAFA;
+  background-color: #F8F9FA; /* 부드러운 배경색 */
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
-.container {
+.wrapper {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #FFFFFF;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+/* 헤더 스타일 */
+.site-header {
   text-align: center;
   margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
-header h1 {
+.site-title {
   font-size: 2.5rem;
   color: #0D47A1;
+  margin: 0;
 }
 
-header p {
-  font-size: 1.1rem;
-  margin: 10px 0;
+.site-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
 }
 
-a {
+/* 메인 콘텐츠 */
+.site-content {
+  margin-top: 20px;
+}
+
+.site-content h1, .site-content h2 {
   color: #0D47A1;
+  margin-bottom: 20px;
+}
+
+.site-content a {
+  color: #1E88E5;
   text-decoration: none;
+  border-bottom: 2px solid #1E88E5;
+  transition: color 0.3s, border-color 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
+.site-content a:hover {
+  color: #1565C0;
+  border-color: #1565C0;
 }
 
-footer {
+/* 푸터 스타일 */
+.site-footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #E0E0E0;
   font-size: 0.9rem;
   color: #777;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: #0D47A1;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }

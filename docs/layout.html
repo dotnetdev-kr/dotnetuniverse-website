@@ -5,17 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>{{ page.title }}</h1>
+  <div class="wrapper">
+    <!-- 헤더 -->
+    <header class="site-header">
+      <h1 class="site-title">{{ page.title }}</h1>
+      <p class="site-subtitle">컨퍼런스에 대한 모든 정보를 확인하세요.</p>
     </header>
-    <main>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="site-content">
       {{ content }}
     </main>
-    <footer>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
       <p>© 2025 컨퍼런스 이름. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="./index.md">홈</a></li>
+        <li><a href="./agenda.md">프로그램</a></li>
+        <li><a href="./speakers.md">연사 소개</a></li>
+        <li><a href="./register.md">등록</a></li>
+      </ul>
     </footer>
   </div>
 </body>
